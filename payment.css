@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.bg__image{
+    background: url('images/pattern-background-mobile.svg') no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    z-index: -1; 
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+.payment-plan {
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px black;
+    overflow: hidden;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
+    margin: 15px;
+}
+
+.payment-plan--highlighted {
+    box-shadow: 0 0 15px black;
+    transform: scale(1.05);
+}
+
+.payment-plan__special-text {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: hsl(245, 75%, 35%);
+    box-shadow: black;
+}
+
+.payment-plan__header {
+    padding: 25px;
+    background: hsl(245, 75%, 52%);
+    color: white;
+}
+
+.payment-plan__title, .pricing-plan__summary {
+    margin: 0;
+    text-align: center;
+}
+
+.payment-plan__title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.payment-plan__summary {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.payment-plan__description {
+    padding: 25px;
+}
+
+.payment-plan__list {
+    padding: 0;
+    margin: 0;
+}
+
+.payment-plan__features {
+    list-style: none;
+    margin: none;
+    padding-left: 25px;
+    position: relative;
+    font-size: 14.5px;
+}
+
+.payment-plan__features:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.payment-plan__features::before {
+    content: "\2714";
+    color: hsl(245, 75%, 52%);
+    position: absolute;
+    left: 0;
+}
+
+.payment-plan__actions {
+    padding: 25px;
+    border-top: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-plan__button {
+    display: inline-block;
+    margin: 15px auto;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: white;
+    background: hsl(245, 75%, 52%);
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.payment-plan__button:hover {
+    background: white;
+    color: hsl(245, 75%, 52%);
+    border: 1px solid hsl(245, 75%, 52%);
+    border-radius: 5px;
+}
+
+.payment-plan__cost {
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    color: black;
+}
+
+.payment-plan__text {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.payment-plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px)
+{
+    .bg__image {
+        background: url('./images/pattern-background-desktop.svg') no-repeat center/cover;
+        height: 50vh; 
+    } }
